@@ -1,0 +1,121 @@
+<!Doctype Html>
+<html>
+<head>
+	<title> Expense Tracker </title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="css/mystyles.css" rel="stylesheet">
+    </script>
+	</script>
+</head>
+
+<body>
+    
+    <header class="jumbotron">
+    
+    <div class = "container">
+            <div class = "row row-header">
+                <div class="col-xs-12 col-sm-12">
+                    <h1>Family Expense Tracker</h1>
+                    <p style="padding:20px; color=Black"></p>
+                    <p>It helps to track the expenses made by users of a family.</p>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"> Expenditure Tracker </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li> <a href="toSettings()"> Settings </a></li>
+      <li> <a href="#"> Profile </a></li>
+      <li> <a href="#"> Help </a></li>
+    </ul>
+</nav>
+<div class="container-fluid">
+   <div class="row">
+        <div class="col-xs-12 col-sm-3">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="addExpenditure.html">Add Expenditure <span class="sr-only">(current)</span></a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+    </div>
+       <form action="index.html">
+           <div class="form-group"
+    <div class="col-xs-12 col-sm-6">
+        
+        <div class="table-responsive">
+                    <table class="table table-striped">
+                        <tr>
+                            <td> 
+                            <div class="form-group">
+                                  <label for="catgory">Category:</label>
+                                  <select class="form-control" id="id_category" name="category">
+                                      <optgroup label="Groceries">
+                                          <option>Snacks</option>
+                                          <option>Fruits</option>
+                                          <option>Vegetables</option>
+                                          <option>Home needs</option>
+                                      </optgroup>
+                                      <optgroup label="Shopping">
+                                          <option>Outfits</option>
+                                          <option>Home Appliances</option>
+                                      </optgroup>
+                                  </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type ="text" id="id_date" name="category" class="form-control" placeholder="Date"></td>
+                        </tr>
+                          <tr>
+                              <td> <input type ="text" id="id_amount" name="amount" class="form-control" placeholder="Amount"></td>
+                        </tr>
+                          <tr>
+                              <td><textarea class="form-control" rows="5" id="id_comments" name="comments" class="form-control" placeholder="Comments"></textarea></td>
+                        </tr>
+                    </table>
+            <button type="submit" class="btn btn-primary" onclick="ftnAddExpense">Add</button>
+                  </div>
+</div>
+
+
+    
+        
+    
+    </div>
+</form>
+    
+
+
+       
+       
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+    funtion ftnAddExpense(){
+        console.log("in ftnAddExpense ");
+    }
+  /*
+  $(document).ready(function() {
+    console.log( "ready!" );
+      $("#addExpense").click(function(){
+console.log("add button");
+      });
+}); */
+  
+</script>
+
+</body>
+
+</html>
